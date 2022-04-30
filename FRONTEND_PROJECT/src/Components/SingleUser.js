@@ -30,7 +30,7 @@ const SingleUser = () => {
 			{user && (
 				<div className="card1" style={{textAlign: "center"}} key={user.id}>
                   <div className="card1__image"><img src={user.avatar}/></div>
-            
+                  <p className="card__title">{user.id}</p>
                   <p className="card__title">{user.first_name} {user.last_name}</p>
                   <div className="card__body">
                   <div className='c_email'>Email id: {user.email}</div>
