@@ -1,0 +1,27 @@
+.App {
+  padding: 4rem;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#titlecard:hover {
+  transform: scale(1.1);
+}
+footer:hover {
+  transform: scale(1.1);
+}
+#titlecard{
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}

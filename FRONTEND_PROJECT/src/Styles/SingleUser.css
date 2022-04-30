@@ -1,0 +1,36 @@
+
+  
+.users h1{
+    margin-bottom:20px;
+}
+.users__card{
+    margin-top:40px;
+    border:1px solid #365262;
+    padding:20px;
+}
+.users__card p{
+    margin-bottom: 10px;
+}
+#go{
+    align-items: center;
+}
+.card1 {
+    margin: 2rem 2rem 2rem 0;
+    padding: 1.5rem;
+    width: 250px;
+    border-radius: 3%;
+    box-shadow: 0 0 28px 4px rgba(233, 104, 104, 0.1);
+    transition: transform .3s ease;
+    cursor: pointer;
+    margin-left: 40%;
+}
+.card1:hover {
+    transform: scale(1.1);
+}
+#titlecarduser{
+    text-align: center;
+    width: 90%;
+    background-color: DarkSalmon;
+    color: white;
+   margin-left: 5%;
+}

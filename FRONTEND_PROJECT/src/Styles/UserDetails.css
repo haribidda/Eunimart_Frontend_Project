@@ -1,0 +1,35 @@
+.card {
+    margin: 2rem 2rem 2rem 0;
+    padding: 1.5rem;
+    width: 250px;
+    box-shadow: 0 0 28px 4px rgba(233, 104, 104, 0.1);
+    transition: transform .3s ease;
+    cursor: pointer;
+    border-radius: 3%;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card__title {
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.card__image {
+    display: flex;
+    justify-content:center;
+}
+.card__image img {
+    border-radius: 50%;
+}
+.c_email{
+    font-weight: 200;
+    font-size: 1rem;
+    text-align: center;
+}
+.c_id{
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-align: center;
+}
