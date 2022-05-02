@@ -2,7 +2,8 @@ import React from 'react';
 import '../Styles/SingleUser.css';
 import '../Styles/UserDetails.css';
 import UNavbar from "../Components/userdetailheader";
-import {useParams,Link,} from 'react-router-dom'
+import {useParams,Link,} from 'react-router-dom';
+import Footer from "../Components/footer";
 const SingleUser = () => {
 	const params = useParams()
 
@@ -19,7 +20,6 @@ const SingleUser = () => {
             userData = [];
           }
           console.log(userData.data);
-        
           setUser(userData.data);
         })();
       }, [params]);
@@ -28,18 +28,20 @@ const SingleUser = () => {
 		<>
 			<UNavbar/>
 			{user && (
-				<div className="card1" style={{textAlign: "center"}} key={user.id}>
-                  <div className="card1__image"><img src={user.avatar}/></div>
-                  <p className="card__title">{user.id}</p>
-                  <p className="card__title">{user.first_name} {user.last_name}</p>
-                  <div className="card__body">
-                  <div className='c_email'>Email id: {user.email}</div>
-                  </div>
-              </div>
+                    <div class="container" key={user.id}>
+                    <div class="image">
+                            <img src={user.avatar}/>
+                    </div>
+                    <div class="text">
+                          {/* <p>User ID:  {user.id}</p> */}
+                          <p>First Name : {user.first_name}</p>
+                          <p>Last Name : {user.last_name}</p>
+                          <p>Email id  : {user.email}</p>
+                    </div>
+                  </div>   
 			)}
             <Link to='/users'><h1 style={{textAlign: "center"}}>Go back</h1></Link>
 		</>
 	)
 }
-
 export default SingleUser;
